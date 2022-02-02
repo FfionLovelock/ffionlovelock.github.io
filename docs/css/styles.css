@@ -78,3 +78,45 @@ span.stage_directions_inline {
 
 span.character_beforespeech {
 }
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    background-color: ivory;
+}
+
+h1  {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+main { 
+    width: 70%;
+    border: 2px solid black;
+    margin: 0% auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+figure {
+width: 100%;
+flex-basis: 300px;
+flex-grow: 1;
+flex-shrink: 1;
+margin: .5rem;
+}
