@@ -95,31 +95,27 @@ section.nav {
       flex-direction: column;
     }
   
-    .hamburger {
-      display: block;
-      float: right;
-      cursor: pointer;
-    }
-  
-    /*   ~ the tilda points to the next sibling selector */
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
 
-    #toggle:checked ~ #menu {
-      display: block !important;
-    }
- 
-    input[type="checkbox"]:checked ~ ul {
-      display: block;
-    }
+  /*   ~ the tilda points to the next sibling selector */
 
-    li ul {
-      position: static;
-    }
-    nav ul li {
-      flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
-      width: 100%;
-    }
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
 
-  }  
+  li ul {
+    position: static;
+  }
+  nav ul li {
+    flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+    width: 100%;
+  }
+
+}
 
 section {
   border: 0;
