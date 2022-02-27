@@ -1,42 +1,105 @@
-body {
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-background-color: ivory;
+*{
+    box-sizing: border-box;
+    margin: 1em;
+}
+
+body { 
+    font-family: 'Times New Roman', Times, serif;
 }
 
 main {
-    border:2px solid black;
-background-color: white;
-width: 70%;
-margin:0 auto;
-max-width: 600px;
-padding: 0 2em 2em 2em;
+    background-color: ivory; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    border: 1.5px solid black;
+}
+
+h1 {
+font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: xx-large;
+  background-color: rgb(85, 18, 18);
+  display: block; color: white;
+}
+
+li {
+    font-style: oblique;
 }
 
 figure {
-border:1px solid black;
-width: 50%;
-margin:20px auto 10px auto ;
+    flex-grow: 1;
+    flex-basis: 300px;
 }
 
-h1, h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+image {
+    flex-grow: 1;
+    flex-basis: 300px;
 }
-
-ul {
-    text-align: left;
-}
-
 
 img {
-width: 100%;
-display:block;
+    width: 95%;
+}
+
+.image {
+    flex-grow: 1;
+    flex-basis: 300px;   
+}
+
+.info {
+    background-color: ivory;
+    word-spacing: 0.5em;
+    width: 95%;
+    color: black;
+    padding: 1em;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-grow: 1;
+    border: 1px solid rgb(85, 18, 18);
 }
 
 p { 
-    text-align: justify;
+    margin-top: 1em;
 }
 
-p.first { 
-color: darkred;
+.playlink {
+    margin-top: 2em;
+text-align: center;
+color: rgb(85, 18, 18);
+padding: 1em;
+}
+
+.playlink a {
+    text-decoration: none;
+    color: rgb(85, 18, 18);
+}
+
+.playlink:hover {
+  background-color: white;
+}
+
+.playlink:hover a {
+    color: black
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    color: rgb(85, 18, 18);
+}
+
+
+@media screen and (max-width: 600px){
+.info { 
+    font-size: 0.8em;
+}
+
+main {
+    width: 100%;
+}
 }
