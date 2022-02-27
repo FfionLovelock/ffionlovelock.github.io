@@ -8,7 +8,7 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: ivory;
   /*your style rules go in here */
 }
 
@@ -196,7 +196,7 @@ p.charactername {
 .play {
   font-family: 'Times New Roman', Times, serif;
   border: 1px solid black;
-  background-color: ivory;
+  background-color: white;
   width: 70%;
   margin: 3em auto;
   text-indent: 2%;
