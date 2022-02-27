@@ -5,10 +5,11 @@
 
 body { 
     font-family: 'Times New Roman', Times, serif;
+    background-color: ivory;
 }
 
 main {
-    background-color: ivory; 
+    background-color: white; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,7 +51,7 @@ img {
 }
 
 .info {
-    background-color: ivory;
+    background-color: white;
     word-spacing: 0.5em;
     width: 95%;
     color: black;
@@ -78,7 +79,7 @@ padding: 1em;
 }
 
 .playlink:hover {
-  background-color: white;
+  background-color: ivory;
 }
 
 .playlink:hover a {

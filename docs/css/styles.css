@@ -143,7 +143,7 @@ section {
 
 .dramatis {
   border: 1px solid black;
-  background-color: ivory;
+  background-color: white;
   width: 70%;
   margin: 3em auto;
   text-indent: 0.5%;
@@ -234,7 +234,7 @@ h2 {
   font-style: normal;
   font-family: 'Times New Roman', Times, serif;
   background-color: ivory; 
-  display: block; color: rgb(85, 18, 18);
+  display: block; color: rgb(85, 24, 24);
   padding: 8px;
 }
 
@@ -295,6 +295,7 @@ h2.stagedirection {
   font-size: medium;
   text-indent: 0%;
   text-align: right;
+  background-color: white;
 }
 
 .verseline {
