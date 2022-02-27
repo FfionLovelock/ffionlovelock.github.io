@@ -8,11 +8,118 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(255, 255, 255);
   /*your style rules go in here */
 }
 
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 60px;
+}
+
+section.nav {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2em;
+    padding: 0;
+  }
+  
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(85, 24, 24, 0.9);
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    flex: 0 0 8rem; /*the same as flex-grow, flex-shrink, flex-basis */
+    text-align: center;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    display: block;
+    color: white;
+  }
+  
+  nav ul li:hover {
+    background-color: rgb(112, 40, 40);
+  }
+  nav ul li a:hover {
+    color: white;
+  }
+  
+  li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(85, 18, 18);
+  }
+  
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav ul li ul li {
+    flex: 0 1 auto;
+    width: 8rem; /* the same as the value for flex-basis on the parent li */
+  }
+  
+  @media screen and (max-width: 700px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .hamburger {
+      display: block;
+      float: right;
+      cursor: pointer;
+    }
+  
+    /*   ~ the tilda points to the next sibling selector */
+  
+    input[type="checkbox"]:checked ~ ul {
+      display: block;
+    }
+
+    li ul {
+      position: static;
+    }
+    nav ul li {
+      flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+      width: 100%;
+    }
+
+  }  
+
 section {
   border: 0;
+  background-color: white;
 }
 
 /*Here follows the class names that you will have in your html*/
@@ -21,102 +128,191 @@ section {
 
 /* the following may not be used but it doesn't matter if they are listed here  */
 
-section.cover {
+/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
+
+.title {
   text-align: center;
+  font-size: xx-large;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: white; 
+  display: block; color: black;
+  padding: 8px;
+}
+
+.dramatis {
+  border: 1px solid black;
+  background-color: ivory;
   width: 70%;
-  margin: 20px auto;
+  margin: 3em auto;
+  text-indent: 0.5%;
+  word-spacing: 0.5em;
 }
 
-img.playimage {
-  /* you will need a width attribute in here */
-  max-width: 40%;
-  padding: 20px auto;
+.dramatishead {
+  text-align: center; 
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-style: normal;
+  font-size: x-large;
+  background-color: rgb(112, 40, 40);
+  display: block; color: white;
+  padding: 8px;
+  text-indent: 0%;
 }
 
-img.shakespeareimage {
-  /* you will need a width attribute in here */
-  max-width: 40%;
-  padding: 20px auto;
-}
-
-/* If you have created any new stlyes in InDesign and used export tags then you need to add them here */
-
-section.dramatis {
-}
-section.play {
-}
-div.sceneImage {
-}
-h1.act {
-}
-p.character {
-}
 p.charactername {
-}
-h1.dramatishead {
-}
-h2.firstscene {
-}
-h2.location {
-}
-p.play_location {
-}
-p.prose {
-}
-h2.scene {
-}
-p.song {
-}
-h2.stagedirection {
-}
-p.verseline {
-}
-span.character_role {
-}
-span.stage_directions_inline {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: medium;
+  font-style: normal;
+  padding-block: 0.5em;
+  width: 65%;
+  margin: 1em;
+  color: black;
+  font-weight: bold;
 }
 
-span.character_beforespeech {
+.characterrole {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(85, 24, 24);
+  font-weight: normal;
+  font-style: italic;
+}
+
+.playlocation {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: large;
+  background-color: white;
+  display: block; color: rgb(85, 24, 24);
+  text-indent: 0%;
+  padding: 0.5em;
+  text-indent: 0%;
+  font-weight: bold;
+}
+
+.play {
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid black;
+  background-color: ivory;
+  width: 70%;
+  margin: 3em auto;
+  text-indent: 2%;
 }
 
 
-
-
-
-
-
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    background-color: ivory;
-}
-
-h1  {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-}
-
-main { 
-    width: 70%;
-    border: 2px solid black;
-    margin: 0% auto;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin: 0 auto;
-    padding: 0.5rem;
-}
 
 figure {
-width: 100%;
-flex-basis: 300px;
-flex-grow: 1;
-flex-shrink: 1;
-margin: .5rem;
+  width: 100%;
+  margin:0;
+}
+
+img {
+  width: 50%;
+  margin:0 auto;
+  display: block;
+  flex-basis: 300px;
+  flex-grow: 0;
+  padding: 8px;
+}
+
+.actimage {
+  width: 30%;
+  padding: 1px;
+}
+
+p{
+  text-align: left;
+  font-size: small;
+}
+
+h2 {
+  text-align: center;
+  font-size: larger;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: ivory; 
+  display: block; color: rgb(85, 18, 18);
+  padding: 8px;
+}
+
+h2.firstscene {
+  font-size: x-large;
+  text-indent: 0%;
+}
+
+h2.scene {
+  font-size: x-large;
+  text-indent: 0%;
+}
+
+.act {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: xx-large;
+  background-color: rgb(85, 18, 18);
+  display: block; color: white;
+  text-indent: 0%;
+}
+
+p.character {
+  font-size: medium;
+  font-weight: bold;
+  text-indent: 2%;
+  color: rgb(85, 18, 18);
+  padding-block: 0.5em;
+    margin: 0.5em auto;
+}
+
+h2.location {
+  background-color: white;
+  display: block; color: black;
+  padding: 0.5em;
+  text-indent: 0%;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 2px;
+  right: 8px;
+  opacity: 0.9;
+}
+
+.backtotop a {
+text-decoration: none;
+font-size: 3em;
+color: rgb(85, 24, 24);
+}
+
+.backtotop a:hover {
+  color: black;
+}
+
+h2.stagedirection {
+  color: black;
+  font-size: medium;
+  text-indent: 0%;
+  text-align: right;
+}
+
+.verseline {
+  margin: 0 0 0.4em 8em;
+  font-size: medium;
+}
+
+p.prose {
+  margin: 0 0 0.4em 8em;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  dramatis {
+    font-size: 0.8em;
+  }
+
+  play {
+    width: 100%;
+  }
 }
